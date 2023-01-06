@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "RoadsApiDemo";
+}
+
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Roads API Demo</title>
+
+    <link href="~/Content/style.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-3.6.1.min.js"></script>
+    <script src="https://www.gstatic.com/external_hosted/jquery2.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=drawing,places&key=AIzaSyCEYRFwI30__lBC9NOQKACaaDNeliHiYMc"></script>
+
+    <script src="~/Scripts/app.js"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="bar">
+        <p class="auto"><input type="text" id="autoc" /></p>
+        <p><a id="clear" href="#">Click here</a> to clear map.</p>
+        <button onclick="GetLocationFromDB()">Rota Çek</button>
+    </div>
+</body>
+</html>
